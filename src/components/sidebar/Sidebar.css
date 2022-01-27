@@ -4,13 +4,13 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
   width: 5px;
 }
-::-webkit-scrollbar-track {
+.sidebar::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
-::-webkit-scrollbar-thumb {
+.sidebar::-webkit-scrollbar-thumb {
   background-color: rgb(228, 226, 226);
 }
 
