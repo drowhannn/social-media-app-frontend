@@ -55,24 +55,24 @@
   outline: none;
 }
 
-.registerButton {
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  background-color: #1775ee;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
+.registerButton,
 .registerLoginButton {
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #42b72a;
   color: white;
-  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.registerButton {
+  background-color: #1775ee;
+  font-size: 20px;
+}
+
+.registerLoginButton {
+  background-color: #42b72a;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
 }

@@ -70,7 +70,14 @@
 
 .postLikeButton {
   margin-right: 3px;
+  color: red;
+  transition: 300ms ease-in-out;
 }
+
+.postLikeButton:not(.liked) {
+  color: darkgray;
+}
+
 .postLikeCounter {
   font-size: 14px;
 }

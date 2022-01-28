@@ -1,7 +1,10 @@
 import "./Topbar.css";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 const Nav = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className="topbar">
       <div className="topbarLeft">
@@ -36,7 +39,10 @@ const Nav = () => {
           </div>
         </div>
         <img
-          src="https://lh3.googleusercontent.com/a-/AOh14Gh6wZgecVZ-0fZHx04uGXOuiC_sCQKtliWMKe2U=s360-p-rw-no"
+          src={
+            user.profilePicture ||
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdGAFZS8P9rXmHkXMDp_vgYHzKMsrO5xSww&usqp=CAU"
+          }
           className="topbarImg"
           alt="Profile Picture"
         />

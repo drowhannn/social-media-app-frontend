@@ -49,7 +49,7 @@
 .shareOption {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin-right: min(10px, 2%);
 }
 
 .shareIcon {
@@ -71,17 +71,18 @@
 }
 
 .shareOptionText {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .shareButton {
   border: none;
-  padding: 7px 9px;
+  padding: 6px;
   border-radius: 5px;
   background-color: green;
   font-weight: 500;
   color: white;
   margin-right: 20px;
   cursor: pointer;
+  font-size: 13px;
 }
