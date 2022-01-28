@@ -55,29 +55,37 @@
   outline: none;
 }
 
-.loginButton {
+.loginButton,
+.loginRegisterButton {
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #1775ee;
   color: white;
-  font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.loginButton {
+  background-color: #1775ee;
+  font-size: 20px;
+}
+.loginRegisterButton {
+  background-color: #42b72a;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 12px 0;
+}
+
+.loginButton:focus,
+.loginRegisterButton:focus {
+  outline: none;
+}
+
+.loginButton:disabled,
+.loginRegisterButton:disabled {
+  cursor: not-allowed;
 }
 
 .loginForgot {
   text-align: center;
   color: #1775ee;
-}
-
-.loginRegisterButton {
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  background-color: #42b72a;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
 }
