@@ -13,10 +13,14 @@ const Feed = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await axios.get(`posts/timeline/${user._id}`);
-      return response.data;
+      setPosts(
+        response.data.sort(
+          (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
+        )
+      );
     };
-    fetchPosts().then((data) => setPosts(data));
-  }, []);
+    fetchPosts();
+  }, [user]);
 
   return (
     <div className="feed">
